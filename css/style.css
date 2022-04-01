@@ -1140,6 +1140,12 @@ nav{
 	left: 20px;
 	width: 20ch;
 	font-size: 2em;
+	transition: 2s;
+	transition-timing-function: ease-out;
+}
+
+.bodyHome header p:hover{
+	width: 30%;
 }
 
 /*Cierra HEADER*/
@@ -1440,9 +1446,12 @@ nav{
 	width: 60%;
 	max-width: 250px;
 	margin:0;
+	transition: 2s;
 }
 
-
+#guitarHomefondo:hover {
+	transform: rotate(180deg);
+}
 
 
 
@@ -1482,8 +1491,16 @@ nav{
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas: 'left right';
 	width: 60%;
-	height: auto;
-}
+	height: auto;  animation-name: example;
+	animation-duration: 3s;  
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes example {
+	from {top: 0px;}
+	to {top: 200px; background-color: #837878;}
+  }
+
 
 #panel .left{
 	grid-area: left;
@@ -1547,6 +1564,8 @@ nav{
 
 
 
+
+
 /*------------------GUITARS-------------*/
 
 /*HEADER*/
@@ -1581,6 +1600,30 @@ nav{
 	margin: 0 auto;
 	padding: 4vh;
 }
+
+
+
+
+
+
+
+
+/*------------------ABOUT-------------*/
+
+.bodyAbout header h1{
+	animation-name: about;
+	animation-duration: 4s;
+  }
+  
+  @keyframes about {
+	from {background-color: #D1AA80;}
+	to {background-color: #3b2213;}
+  }
+}
+
+
+
+
 
 
 
