@@ -2,6 +2,7 @@
 $mainColor: #E4D6A7;
 $secondColor: #3B2213;
 $keyColor: #F0E3E3;
+$redColor: #931D1D;
 
 //sizing
 $w-100: 100%;
@@ -21,10 +22,6 @@ $w-50: 50%;
 
 h1{
     font-family: $fontTitles;
-}
-
-main{
-    background-color: $mainColor;
 }
 
 // media queries comunes a todo el sitio
@@ -153,5 +150,7 @@ main{
 } 
 
 /*FINAL DE GRID TEMPLATE AREAS*/
+
 /*Final de media queries*/
+
 }

@@ -1,0 +1,39 @@
+/*------------------GUITARS-------------*/
+
+.bodyGuitars{
+
+/*HEADER*/
+
+header{
+
+    background-color: $secondColor;
+
+    h1{
+        padding: 6rem auto 2rem auto;
+        margin-bottom: 0;
+        text-align: center;
+        color: $keyColor;
+
+        @media only screen and (min-width: 450px) {
+            text-align: left;
+            font-size: 3rem;
+            padding-left: 3rem;
+        }
+    }
+} 
+
+main{
+    background-color: $mainColor;
+}
+
+.carousel{
+    padding: 20px 0 20px 0;
+	width: 30%;
+	margin: 0 auto;
+}
+
+.wave{
+	width: 100vw;
+}
+    
+}

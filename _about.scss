@@ -1,0 +1,46 @@
+/*------------------ABOUT-------------*/
+
+.bodyAbout{
+
+/*HEADER*/
+
+header{
+	background-color: $secondColor;
+
+    h1{	
+        text-align: left;
+        margin-bottom: 0;
+        padding: 2vh;
+        color: $keyColor;
+
+        @media only screen and (min-width: 450px) {
+            animation-name: about;
+	        animation-duration: 4s;
+
+            @keyframes about {
+                from {background-color: $mainColor;}
+                to {background-color: $secondColor;}
+              }
+        }
+    }
+}
+
+/*MAIN*/
+
+main{
+
+    background-color: $mainColor;
+    div{
+        padding: 1rem;
+    }
+    img{
+        width: 100%;
+    }
+
+} 
+
+.wave{
+	width: 100%;
+}
+
+}

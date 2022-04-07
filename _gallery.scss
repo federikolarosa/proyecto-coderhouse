@@ -1,0 +1,43 @@
+/*------------------GALLERY-------------*/
+
+.bodyGallery {
+
+/*HEADER*/
+
+header{
+
+	background-color: $secondColor;
+
+    h1{
+        padding: 6rem auto 2rem auto;
+        margin-bottom: 0;
+        text-align: center;
+        color: $keyColor;
+
+        @media only screen and (min-width: 450px) {
+            text-align: left;
+            font-size: 3rem;
+            padding-left: 3rem;
+        }
+    }
+}
+
+/*MAIN*/
+
+main {
+    background-color: $mainColor;
+
+    .carousel{
+        @media only screen and (min-width: 450px) {
+            width: 50%;
+            margin: 0 auto;
+            padding: 4vh;
+        }
+    }
+}
+
+.wave{
+	width: 100vw;
+}
+
+}
