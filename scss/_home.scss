@@ -1,0 +1,687 @@
+/*------------------HOME-------------*/
+
+/*HEADER*/
+
+header{
+
+.heroHome{
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-image: url("../img/home/herohome.jpg");
+	background-repeat: no-repeat;
+	background-position: 90% 50%;
+	background-size: cover;
+	position: relative;
+
+    h1{
+        font-size: 4em;
+        margin-top: 3vh;
+        letter-spacing: 0.1%;
+        color: $keyColor;
+        @media only screen and (min-width: 450px) {
+            font-size: 7rem;
+	        letter-spacing: 10%;
+        }
+    }
+
+    #guitarlogo{
+        height: 15%;	
+    }
+
+    #lapacho{
+	    height: 25%;	
+    }
+
+    h2{
+        font-size: 2rem;
+        font-family: $fontSecondary;
+        margin-bottom: 2vh;
+        color: $keyColor;
+        @media only screen and (min-width: 450px) {
+            font-size: 4rem;
+        }
+    }
+
+    @media only screen and (min-width: 450px) {
+        width: 100%;
+	    height: 85vh;
+	    border-radius: 0px 0px 0px 50px;
+    }
+}
+
+p{
+    @media only screen and (min-width: 450px) {
+        position: absolute;
+        font-family: $fontSecondary;
+        color: $keyColor;
+        top: 45vh;
+        left: 20px;
+        width: 20ch;
+        font-size: 2em;
+        transition: 2s;
+        transition-timing-function: ease-out;
+        &:hover{
+            width: 30%;
+        }
+    
+}
+
+}
+
+}
+
+/*MAIN HOME*/
+
+	/*MAIN SECTION 1*/
+
+		/*MAIN div1*/
+
+#main__div1--Home{
+
+	height: auto;
+	margin: 0 1rem;
+	padding-top: 1.5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+
+    h2{
+        width: 100%;
+        font-family: $fontTitles;
+        font-size: 2rem;
+        text-align: justify;
+        color: #931D1D;
+        border-bottom: #735C5C solid 2px;
+        padding: 1vh 0;
+        @media only screen and (min-width: 450px) {
+            width: 90%;
+			font-size: 2vw;
+			text-align: justify;
+			color: #931D1D;
+			border-bottom: $secondColor solid 2px;
+			padding: 1vh 0;
+        }
+    }
+
+    ul{
+        margin: 1rem 15vw 1rem auto;
+        padding-left: 7vw;
+        padding-bottom: 0;
+        font-family: $fontMain;
+
+        li{
+            font-size: 2rem;
+            line-height: 2rem;
+            padding-bottom: 1rem;
+            &:nth-of-type(1n){
+                text-indent: 1rem;
+                color: #3b2213;
+                @media only screen and (min-width: 450px) {
+                    text-indent: 0rem;
+			        color: #3b2213;
+                }
+            }
+            &:nth-of-type(2n){
+                font-style: italic;
+                text-align: right;
+                @media only screen and (min-width: 450px) {
+                    font-style: normal;
+			        font-weight: bold;
+			        text-align: left;
+                }
+            }
+            &:last-of-type{
+                padding-bottom: 0;
+            }
+
+            @media only screen and (min-width: 450px) {
+                font-size: 1.5vw;
+			    text-align: left;
+                text-indent: 0;
+                line-height: 2vw;
+                padding-bottom: 5vh;
+            }
+    
+        }
+
+        @media only screen and (min-width: 450px) {
+            margin: 3vh 4vw 1rem auto;
+			padding-left: 1vw;
+			padding-bottom: 0;
+        }
+
+    }
+
+    #phrase1{
+        font-size: 2em;
+        font-family: $fontSecondary;
+        width: 26ch;
+        text-align: right;
+        margin-bottom: 0.2vh;
+        padding-right: 1em;
+        span{
+            font-size: 1.5em;
+        }
+        p {
+            @media only screen and (min-width: 450px) {
+                font-size: 7rem;
+			    color: $keyColor;
+            }
+
+            &:first-of-type{
+                @media only screen and (min-width: 450px) {
+                    position: absolute;
+                    left: 48%;
+                    top: 176vh;
+                }
+            }
+
+            &:last-of-type{
+                @media only screen and (min-width: 450px) {
+                    position: absolute;
+                    right: 13%;
+                    top: 182vh;
+                }
+            }
+        }
+
+        @media only screen and (min-width: 450px) {
+            font-size: 3rem;
+			color: #837878;
+			text-align: right;
+			margin-bottom: 0.2vh;
+			margin-left: 7vw;
+        }
+    }
+
+    @media only screen and (min-width: 450px) {
+        height: fit-content;
+		display: flex;
+		padding-top: 1.5%;
+    }
+}
+
+		/*MAIN div2*/
+
+#main__div2--Home{
+	height: 50vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 0 2% 2% 0;
+
+        @media only screen and (min-width: 450px) {
+            margin: 5vh 0 5vh 0;
+			filter: drop-shadow(5px 1px 14px rgba(0, 0, 0, 0.25));
+			border-radius: 10px;
+        }
+    }
+
+    #poema__div2{
+        width: 100%;
+        font-size: 1.1em;
+        font-family: $fontSecondary;
+        text-align: justify;
+        padding: 5%;
+        line-height: 1.6rem;
+        text-align: left;
+
+        p{
+            &:first-of-type{
+                text-align: right;
+                padding-bottom: 15%;
+            }
+    
+            &:last-of-type{
+                @media only screen and (min-width: 450px) {
+                    width: 20ch;
+                    height: auto;
+                    font-size: 1.7em;
+                    line-height: 2.5em;
+                    padding-bottom: 15%;
+                }
+            }
+
+        }
+
+        @media only screen and (min-width: 450px) {
+            text-align: justify;
+			padding: 5%;
+        }
+    }
+
+    @media only screen and (min-width: 450px) {
+        padding-top: 20%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+    }
+
+}
+
+		/*MAIN div3*/
+
+#main__div3--Home{
+	width: 100%;
+	position: relative;
+
+    .button1{
+        position: absolute; 
+        top: 60%;
+        left: 0; 
+        right: 0; 
+        margin: 0 auto; 
+        width: 10em;
+        background:none;
+        border: #E5E5E5 solid 3px;
+        border-radius: 2em;
+
+        a{
+            text-decoration: none;
+            font-size: 2rem;
+
+            @media only screen and (min-width: 450px) {
+                color: #F0E3E3;
+            }
+        }
+
+        @media only screen and (min-width: 450px) {
+            padding: 0 3rem;
+			font-size: 2rem;
+			background: none;
+			margin: 0 auto;
+			border: #F0E3E3 solid 2px;
+			border-radius: 20px;
+			position: absolute;
+			width: 20vh;
+			top: 70%;
+        }
+    }
+
+    img{
+        @media only screen and (min-width: 450px) {
+            width: 80%;
+			filter: drop-shadow(0px 5px 41px rgba(0, 0, 0, 0.25));
+			border-radius: 12px;
+        }
+    }
+
+    @media only screen and (min-width: 450px) {
+        margin: 2vh auto;
+		height: 62vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+    }
+}
+
+
+		/*MAIN div4*/
+		
+#main__div4--Home{
+	grid-area: div4;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+    h2{
+        margin: 3vh auto;
+        margin-bottom: 0;
+        border-bottom: #837878 solid 2px;
+        width: 90%;
+        font-family: $fontTitles;
+
+        @media only screen and (min-width: 450px) {
+            margin: 3vh auto;
+			margin-bottom: 0;
+			border-bottom: #837878 solid 2px;
+			width: 90%;
+        }
+    }
+
+    .includes{
+        margin: 0 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-top: 6%;
+        padding-right: 4%;
+
+        .list_items{
+            width: 7vw;
+            height: auto;
+            margin-right: 5%;
+
+            @media only screen and (min-width: 450px) {
+                width: 30%;
+			    margin-right: 5%;
+            }
+        }
+
+        li{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 2vh;
+            font-family: $fontMain;
+
+            &:last-of-type{
+                margin-bottom: 0;
+                @media only screen and (min-width: 450px) {
+                    margin-bottom: 0;
+                }
+            }
+
+            @media only screen and (min-width: 450px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 2vh;
+            }
+        }
+
+        span{
+            font-size: 1.3rem;
+            font-family: $fontMain;
+
+            @media only screen and (min-width: 450px) {
+                font-size: 1.3rem;
+            }
+        }
+
+        p{
+            margin-top: 4%;
+            font-family: $fontMain;
+
+            @media only screen and (min-width: 450px) {
+                margin-top: 4%;
+            }
+        }
+
+        @media only screen and (min-width: 450px) {
+            margin: 0 10%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: flex-start;
+			padding-top: 6%;
+			padding-right: 4%;
+        }
+    }
+
+    .whatever{
+        margin: 0.5vh auto 0 35%;
+        font-style: italic;
+
+        @media only screen and (min-width: 450px) {
+            margin: 0.5vh auto 0 35%;
+			font-style: italic;
+        }
+    }
+    
+    .warning{
+        margin-top: 4%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+
+        .list_items{
+            @media only screen and (min-width: 450px) {
+                width: 15%;
+            }
+        }
+
+        .list_items:first-of-type{
+            margin-right: 0;
+            font-family: $fontMain;
+
+            @media only screen and (min-width: 450px) {
+                margin-right: 0;
+            }
+        }
+
+        p{
+            margin-top: 1%;
+            font-family: $fontMain;
+
+            @media only screen and (min-width: 450px) {
+                margin-top: 1%;
+            }
+        }
+
+        @media only screen and (min-width: 450px) {
+            margin-top: 4%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-around;
+			width: 80%;
+        }
+    }
+
+    .last{
+        margin-top: 2%;
+        font-size: 1rem;
+        margin-bottom: 5%;
+
+        @media only screen and (min-width: 450px) {
+            margin-top: 2%;
+			font-size: 1rem;
+			margin-bottom: 5%;
+        }
+    }
+
+    @media only screen and (min-width: 450px) {
+            width: 80%;
+			margin-top: 8em;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+    }
+}
+
+	/*MAIN SECTION 2*/
+
+		/*MAIN div5*/
+
+#main__div5--Home{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:flex-start;
+    background-color: white;
+
+    img{
+        width: 100%;
+    }
+
+    p{
+        font-size: 1.5rem;
+        font-family: $fontSecondary;
+        color: #F0E3E3;
+        position: absolute;
+        top: 30%;
+
+        &:last-of-type{
+            font-size: 2rem;
+            font-family: $fontTitles;
+            position: absolute;
+            top: 35%;
+
+            @media only screen and (min-width: 450px) {
+                font-size: 5em;
+                position: absolute;
+                top: 35%;
+            }
+        }
+
+        @media only screen and (min-width: 450px) {
+            font-size: 3em;
+            color: $keyColor;
+            position: absolute;
+            top: 30%;
+        }
+    }
+
+    .button2{
+        padding: 0 3rem;
+        font-size: 2rem;
+        background: none;
+        margin: 0 auto;
+        border: #F0E3E3 solid 2px;
+        border-radius: 20px;
+        position: absolute;
+        top: 50%;
+
+        a{
+            color: #F0E3E3;
+            text-decoration: none;
+            font-family: $fontSecondary;
+
+            @media only screen and (min-width: 450px) {
+                color: $keyColor;
+	            font-size: 2.5em;
+            }
+        }
+
+        @media only screen and (min-width: 450px) {
+            padding: 0 3em;
+            background: none;
+            margin: 0 auto;
+            border: #F0E3E3 solid 3px;
+            border-radius: 2em;
+            position: absolute;
+            top: 50%;
+            transition: 0.5s;
+
+            &:hover{
+                transform: translateY(-.4em);
+            }
+        }
+    }
+
+    @media only screen and (min-width: 450px) {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-start;
+    }
+}
+
+
+		/*MAIN div6*/
+
+#main__div6--Home{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: flex-end;
+    background-color: white;
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        max-width: 50%;
+
+        h3{
+            font-size: 1.8em;
+            font-family: $fontTitles;
+            margin-bottom: 3%;
+            min-width: 10ch;
+
+            @media only screen and (min-width: 450px) {
+                font-size: 3em;
+            }
+        }
+
+        p{
+            font-size: 1.2em;
+            font-family: $fontMain;
+            &:last-of-type{
+                font-size: 1em;
+                text-align: right;
+            }
+
+            @media only screen and (min-width: 450px) {
+                font-size: 2em;
+            }
+        }
+    }
+
+    .right{
+        @media only screen and (min-width: 450px) {
+            display: inline-block;
+	        width: 30%;
+        }
+    }
+
+    #guitarHomefondo{
+        width: 30%;
+        max-width: 250px;
+        margin-right: 3rem;
+
+        @media only screen and (min-width: 450px) {
+            width: 60%;
+            max-width: 250px;
+            margin:0;
+            transition: 2s;
+
+            &:hover{
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    @media only screen and (min-width: 450px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
+
+/*Cierra MAIN HOME*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

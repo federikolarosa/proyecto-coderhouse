@@ -1,0 +1,157 @@
+// variables globales
+$mainColor: #E4D6A7;
+$secondColor: #3B2213;
+$keyColor: #F0E3E3;
+
+//sizing
+$w-100: 100%;
+$w-50: 50%;
+
+.none{
+	display: none;
+}
+
+.relative{
+	position: relative;
+}
+
+.nomobile{
+	display: none;
+}
+
+h1{
+    font-family: $fontTitles;
+}
+
+main{
+    background-color: $mainColor;
+}
+
+// media queries comunes a todo el sitio
+
+@media only screen and (min-width: 450px){
+    
+    .nodesktop{
+        display: none;
+    }
+    
+    .nomobile{
+        display: inline-block;
+    }
+
+/*GRID TEMPLATE AREAS PARA CADA PAGINA*/
+
+/*-------------HOME-----------*/
+
+/*En HOME designe la section1 como Grid*/
+
+.sectionHome1{
+	display: grid;
+	height: auto;
+	grid-template-columns: 40vw 60vw;
+	grid-template-areas: 
+	"div2 div1"
+	"div4 div1"
+	"div4 div3";
+    #main__div1--Home{
+        grid-area: div1;
+    }
+    #main__div2--Home{
+        grid-area: div2;
+    }
+    
+    #main__div3--Home{
+        grid-area: div3;
+    }
+    
+    #main__div4--Home{
+        grid-area: div4;
+    }
+}
+
+/*-------------GUITARS-----------*/
+
+/*En GUITARS designe todo MAIN como Grid*/
+
+/* .bodyAbout main{
+	display: grid;
+	height: auto;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas: 
+	"div1 div2 div3"
+}
+ */
+
+.bodyGuitars{
+    .div1{
+        grid-area: div1;
+    }
+    .div2{
+        grid-area: div2;
+    }
+    .div3{
+        grid-area: div3;
+    }
+} 
+
+
+/*-------------GALLERY-----------*/
+
+/*En GALLERY designe todo MAIN como Grid*/
+
+/* .bodyGallery main{
+	display: grid;
+	height: auto;
+	grid-template-columns: 35vw 20vw 45vw;
+	grid-template-areas: 
+	"div2 div2 div5"
+	"div3 div4 div5"
+	"div1 div1 div1"
+}
+ */
+
+.bodyGallery{
+    .div1{
+        grid-area: div1;
+    }
+    .div2{
+        grid-area: div2;
+    }
+    .div3{
+        grid-area: div3;
+    }
+    .div4{
+        grid-area: div4;
+    }
+    .div5{
+        grid-area: div5;
+    }
+}
+
+
+/*-------------ABOUT-----------*/
+
+/*En ABOUT solo designe la section1 como Grid*/
+
+.bodyAbout{
+    main{
+        display: grid;
+        height: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "div1 aside div2"
+    }
+    .div1{
+        grid-area: div1;
+    }
+    aside{
+        grid-area: aside;
+    }
+    .div2{
+        grid-area: div2;
+    }
+} 
+
+/*FINAL DE GRID TEMPLATE AREAS*/
+/*Final de media queries*/
+}

@@ -1,0 +1,145 @@
+/*Comienza FOOTER, igual para todas las paginas*/
+
+footer{
+	margin-top: 5%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+    section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: .8rem;
+
+        .addressFooter{
+            font-family: $fontSecondary;
+        }
+
+        .social{
+            margin-left: 2%;
+            margin-bottom: 2%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            a{
+                width: 30px;
+                margin-right: 10px;
+                @media only screen and (min-width: 450px){
+                    width: 30px;
+	                margin-right: 20px;
+                }
+            }
+
+            img{
+                width: 80%;
+                height: auto;
+                @media only screen and (min-width: 450px){
+                    width: 100%;
+	                height: auto;
+	                transition: 0.2s;
+                    &:hover{
+                        transform: scale(2);
+                    }
+                }
+            }
+
+            @media only screen and (min-width: 450px){
+                margin: 0 auto 0 6vw;
+	            display: flex;
+	            flex-direction: row;
+	            align-items: center;
+	            justify-content: flex-start;
+            }
+
+        }
+
+        @media only screen and (min-width: 450px){
+            display: flex;
+	        flex-direction: row;
+	        align-items: center;
+	        justify-content: space-between;
+	        margin-bottom: .8rem;
+        }
+    }
+
+    #isologoFooter{
+        width: 40%;
+        height: auto;
+        margin-right: 10vw;
+        @media only screen and (min-width: 450px){
+            width: 15vw;
+	        margin-right: 7vw;
+	        transition: 0.8s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .copyright{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        span{
+            font-size: 0.7rem;
+            font-family: $fontMain;
+            &:first-of-type{
+                padding-left: 15%;
+            }
+
+            @media only screen and (min-width: 450px){
+                font-size: 1.5rem;
+	            padding-left: 50vw;
+                &:first-of-type{
+                    padding-left: 2vw; 
+                }
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: $secondColor;
+        }
+
+        #topFooter{
+            position: absolute;
+            width: 7%;
+            left: 10px;
+            bottom: 70px;
+            @media only screen and (min-width: 450px){
+                width: 3%;
+	            position: absolute;
+	            right: 3vw;
+	            bottom: 10vw;
+            }
+        }
+
+        @media only screen and (min-width: 450px){
+            width: 100vw;
+	        display: flex;
+	        flex-direction: row;
+	        align-items: flex-end;
+	        justify-content: space-between;
+	        padding-bottom: 1vh;
+        }
+    }
+    @media only screen and (min-width: 450px){
+        margin-top: 5%;
+	    height: auto;
+	    display: flex;
+	    flex-direction: column;
+	    align-items:stretch;
+	    justify-content: center;
+    }
+}
+
+/*Finaliza FOOTER*/
