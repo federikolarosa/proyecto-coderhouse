@@ -19,10 +19,9 @@ header{
 	position: relative;
 
     h1{
-        font-size: 4em;
+        @include text(4em, 4em, $keyColor)
         margin-top: 3vh;
         letter-spacing: 0.1%;
-        color: $keyColor;
         @media only screen and (min-width: 450px) {
             font-size: 7rem;
 	        letter-spacing: 10%;
@@ -38,7 +37,7 @@ header{
     }
 
     h2{
-        font-size: 2rem;
+        @include text(2em, 5em, $keyColor)
         font-family: $fontSecondary;
         margin-bottom: 2vh;
         color: $keyColor;
@@ -56,13 +55,12 @@ header{
 
 p{
     @media only screen and (min-width: 450px) {
+        @include text(2em, 2em, $keyColor)
         position: absolute;
         font-family: $fontSecondary;
-        color: $keyColor;
         top: 45vh;
         left: 20px;
         width: 20ch;
-        font-size: 2em;
         transition: 2s;
         transition-timing-function: ease-out;
         &:hover{
@@ -96,11 +94,10 @@ p{
 	align-items: flex-start;
 
     h2{
+        @include text(2em, 2em, $redColor)
         width: 100%;
         font-family: $fontTitles;
-        font-size: 2rem;
         text-align: justify;
-        color: $redColor;
         border-bottom: $keyColor solid 2px;
         padding: 1vh 0;
         @media only screen and (min-width: 450px) {
@@ -120,8 +117,7 @@ p{
         font-family: $fontMain;
 
         li{
-            font-size: 2rem;
-            line-height: 2rem;
+            @include text(2rem, 2rem, black)
             padding-bottom: 1rem;
             &:nth-of-type(1n){
                 text-indent: 1rem;
@@ -145,10 +141,9 @@ p{
             }
 
             @media only screen and (min-width: 450px) {
-                font-size: 1.5vw;
+                @include text(1.5vw, 2vw, black)
 			    text-align: left;
                 text-indent: 0;
-                line-height: 2vw;
                 padding-bottom: 5vh;
             }
     
@@ -232,12 +227,11 @@ p{
     }
 
     #poema__div2{
+        @include text(1.1em, 1.6rem, black)
         width: 100%;
-        font-size: 1.1em;
         font-family: $fontSecondary;
         text-align: justify;
         padding: 5%;
-        line-height: 1.6rem;
         text-align: left;
 
         p{
@@ -278,39 +272,6 @@ p{
 #main__div3--Home{
 	width: 100%;
 	position: relative;
-
-    .button1{
-        position: absolute; 
-        top: 60%;
-        left: 0; 
-        right: 0; 
-        margin: 0 auto; 
-        width: 10em;
-        background:none;
-        border: $keyColor solid 3px;
-        border-radius: 2em;
-
-        a{
-            text-decoration: none;
-            font-size: 2rem;
-
-            @media only screen and (min-width: 450px) {
-                color: $keyColor;
-            }
-        }
-
-        @media only screen and (min-width: 450px) {
-            padding: 0 3rem;
-			font-size: 2rem;
-			background: none;
-			margin: 0 auto;
-			border: $keyColor solid 2px;
-			border-radius: 20px;
-			position: absolute;
-			width: 20vh;
-			top: 70%;
-        }
-    }
 
     img{
         @media only screen and (min-width: 450px) {
@@ -522,9 +483,8 @@ p{
     }
 
     p{
-        font-size: 1.5rem;
+        @include text(1.5rem, 2rem, $keyColor)
         font-family: $fontSecondary;
-        color: $keyColor;
         position: absolute;
         top: 30%;
 
@@ -549,43 +509,6 @@ p{
         }
     }
 
-    .button2{
-        padding: 0 3rem;
-        font-size: 2rem;
-        background: none;
-        margin: 0 auto;
-        border: $keyColor solid 2px;
-        border-radius: 20px;
-        position: absolute;
-        top: 50%;
-
-        a{
-            color: $keyColor;
-            text-decoration: none;
-            font-family: $fontSecondary;
-
-            @media only screen and (min-width: 450px) {
-                color: $keyColor;
-	            font-size: 2.5em;
-            }
-        }
-
-        @media only screen and (min-width: 450px) {
-            padding: 0 3em;
-            background: none;
-            margin: 0 auto;
-            border: $keyColor solid 3px;
-            border-radius: 2em;
-            position: absolute;
-            top: 50%;
-            transition: 0.5s;
-
-            &:hover{
-                transform: translateY(-.4em);
-            }
-        }
-    }
-
     @media only screen and (min-width: 450px) {
         position: relative;
         display: flex;
@@ -604,7 +527,7 @@ p{
 	flex-direction: row;
 	align-items: flex-end;
 	justify-content: flex-end;
-    background-color: white;
+    background-color: map-get($map: $paleta, $key: 'dos');
 
     .left{
         display: flex;

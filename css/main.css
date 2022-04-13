@@ -21,6 +21,41 @@ html {
 h1 {
   font-family: "Playfair Display", serif; }
 
+.button1, .button2 {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 10em;
+  background: none;
+  border: #F0E3E3 solid 3px;
+  border-radius: 2em; }
+  .button1 a, .button2 a {
+    text-decoration: none;
+    font-size: 2rem; }
+    @media only screen and (min-width: 450px) {
+      .button1 a, .button2 a {
+        color: #F0E3E3; } }
+  @media only screen and (min-width: 450px) {
+    .button1, .button2 {
+      padding: 0 3rem;
+      font-size: 2rem;
+      background: none;
+      margin: 0 auto;
+      border: #F0E3E3 solid 2px;
+      border-radius: 20px;
+      position: absolute;
+      width: 20vh;
+      top: 70%; } }
+
+.button2 {
+  width: 25%;
+  font-size: 3rem;
+  font-family: "Playfair Display", serif; }
+  .button2:hover {
+    background-color: #931D1D; }
+
 @media only screen and (min-width: 450px) {
   .nodesktop {
     display: none; }
@@ -42,34 +77,12 @@ h1 {
       grid-area: div3; }
     .sectionHome1 #main__div4--Home {
       grid-area: div4; }
-  /*-------------GUITARS-----------*/
-  /*En GUITARS designe todo MAIN como Grid*/
-  /* .bodyAbout main{
-	display: grid;
-	height: auto;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-areas: 
-	"div1 div2 div3"
-}
- */
   .bodyGuitars .div1 {
     grid-area: div1; }
   .bodyGuitars .div2 {
     grid-area: div2; }
   .bodyGuitars .div3 {
     grid-area: div3; }
-  /*-------------GALLERY-----------*/
-  /*En GALLERY designe todo MAIN como Grid*/
-  /* .bodyGallery main{
-	display: grid;
-	height: auto;
-	grid-template-columns: 35vw 20vw 45vw;
-	grid-template-areas: 
-	"div2 div2 div5"
-	"div3 div4 div5"
-	"div1 div1 div1"
-}
- */
   .bodyGallery .div1 {
     grid-area: div1; }
   .bodyGallery .div2 {
@@ -275,9 +288,10 @@ footer {
     position: relative; }
     .bodyHome header .heroHome h1 {
       font-size: 4em;
+      line-height: 4em;
+      color: #F0E3E3;
       margin-top: 3vh;
-      letter-spacing: 0.1%;
-      color: #F0E3E3; }
+      letter-spacing: 0.1%; }
       @media only screen and (min-width: 450px) {
         .bodyHome header .heroHome h1 {
           font-size: 7rem;
@@ -287,7 +301,9 @@ footer {
     .bodyHome header .heroHome #lapacho {
       height: 25%; }
     .bodyHome header .heroHome h2 {
-      font-size: 2rem;
+      font-size: 2em;
+      line-height: 5em;
+      color: #F0E3E3;
       font-family: "Prata", serif;
       margin-bottom: 2vh;
       color: #F0E3E3; }
@@ -301,13 +317,14 @@ footer {
         border-radius: 0px 0px 0px 50px; } }
   @media only screen and (min-width: 450px) {
     .bodyHome header p {
+      font-size: 2em;
+      line-height: 2em;
+      color: #F0E3E3;
       position: absolute;
       font-family: "Prata", serif;
-      color: #F0E3E3;
       top: 45vh;
       left: 20px;
       width: 20ch;
-      font-size: 2em;
       transition: 2s;
       transition-timing-function: ease-out; }
       .bodyHome header p:hover {
@@ -327,11 +344,12 @@ footer {
       justify-content: space-around;
       align-items: flex-start; }
       .bodyHome .sectionHome1 #main__div1--Home h2 {
+        font-size: 2em;
+        line-height: 2em;
+        color: #931D1D;
         width: 100%;
         font-family: "Playfair Display", serif;
-        font-size: 2rem;
         text-align: justify;
-        color: #931D1D;
         border-bottom: #F0E3E3 solid 2px;
         padding: 1vh 0; }
         @media only screen and (min-width: 450px) {
@@ -350,6 +368,7 @@ footer {
         .bodyHome .sectionHome1 #main__div1--Home ul li {
           font-size: 2rem;
           line-height: 2rem;
+          color: black;
           padding-bottom: 1rem; }
           .bodyHome .sectionHome1 #main__div1--Home ul li:nth-of-type(1n) {
             text-indent: 1rem;
@@ -371,9 +390,10 @@ footer {
           @media only screen and (min-width: 450px) {
             .bodyHome .sectionHome1 #main__div1--Home ul li {
               font-size: 1.5vw;
+              line-height: 2vw;
+              color: black;
               text-align: left;
               text-indent: 0;
-              line-height: 2vw;
               padding-bottom: 5vh; } }
         @media only screen and (min-width: 450px) {
           .bodyHome .sectionHome1 #main__div1--Home ul {
@@ -430,12 +450,13 @@ footer {
             filter: drop-shadow(5px 1px 14px rgba(0, 0, 0, 0.25));
             border-radius: 10px; } }
       .bodyHome .sectionHome1 #main__div2--Home #poema__div2 {
-        width: 100%;
         font-size: 1.1em;
+        line-height: 1.6rem;
+        color: black;
+        width: 100%;
         font-family: "Prata", serif;
         text-align: justify;
         padding: 5%;
-        line-height: 1.6rem;
         text-align: left; }
         .bodyHome .sectionHome1 #main__div2--Home #poema__div2 p:first-of-type {
           text-align: right;
@@ -460,33 +481,6 @@ footer {
     .bodyHome .sectionHome1 #main__div3--Home {
       width: 100%;
       position: relative; }
-      .bodyHome .sectionHome1 #main__div3--Home .button1 {
-        position: absolute;
-        top: 60%;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        width: 10em;
-        background: none;
-        border: #F0E3E3 solid 3px;
-        border-radius: 2em; }
-        .bodyHome .sectionHome1 #main__div3--Home .button1 a {
-          text-decoration: none;
-          font-size: 2rem; }
-          @media only screen and (min-width: 450px) {
-            .bodyHome .sectionHome1 #main__div3--Home .button1 a {
-              color: #F0E3E3; } }
-        @media only screen and (min-width: 450px) {
-          .bodyHome .sectionHome1 #main__div3--Home .button1 {
-            padding: 0 3rem;
-            font-size: 2rem;
-            background: none;
-            margin: 0 auto;
-            border: #F0E3E3 solid 2px;
-            border-radius: 20px;
-            position: absolute;
-            width: 20vh;
-            top: 70%; } }
       @media only screen and (min-width: 450px) {
         .bodyHome .sectionHome1 #main__div3--Home img {
           width: 80%;
@@ -640,8 +634,9 @@ footer {
       width: 100%; }
     .bodyHome #main__div5--Home p {
       font-size: 1.5rem;
-      font-family: "Prata", serif;
+      line-height: 2rem;
       color: #F0E3E3;
+      font-family: "Prata", serif;
       position: absolute;
       top: 30%; }
       .bodyHome #main__div5--Home p:last-of-type {
@@ -660,35 +655,6 @@ footer {
           color: #F0E3E3;
           position: absolute;
           top: 30%; } }
-    .bodyHome #main__div5--Home .button2 {
-      padding: 0 3rem;
-      font-size: 2rem;
-      background: none;
-      margin: 0 auto;
-      border: #F0E3E3 solid 2px;
-      border-radius: 20px;
-      position: absolute;
-      top: 50%; }
-      .bodyHome #main__div5--Home .button2 a {
-        color: #F0E3E3;
-        text-decoration: none;
-        font-family: "Prata", serif; }
-        @media only screen and (min-width: 450px) {
-          .bodyHome #main__div5--Home .button2 a {
-            color: #F0E3E3;
-            font-size: 2.5em; } }
-      @media only screen and (min-width: 450px) {
-        .bodyHome #main__div5--Home .button2 {
-          padding: 0 3em;
-          background: none;
-          margin: 0 auto;
-          border: #F0E3E3 solid 3px;
-          border-radius: 2em;
-          position: absolute;
-          top: 50%;
-          transition: 0.5s; }
-          .bodyHome #main__div5--Home .button2:hover {
-            transform: translateY(-0.4em); } }
     @media only screen and (min-width: 450px) {
       .bodyHome #main__div5--Home {
         position: relative;
